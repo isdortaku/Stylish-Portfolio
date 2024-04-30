@@ -12,56 +12,52 @@
     </head>
 <body>
 
-  <div class="sho">
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
-      
-  
-      <span class="gevha" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      
-      <script> 
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
-      
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-      </script>
-           
-        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Portfolio">Porfolio</a></li>
+                <li><a href="#Contact Us">Cotact Us</a></li>
+            </ul>
+
+            
+        </nav>
 
 
  
 
 
     <!-- banner Section -->
+    <div id="Home">
     <div class="main">
             <h1>Stylish Portfolio</h1>
             <p>A free Bootstrap Theme by Start Bootstrap</p>
             <a href="#">Find Out More</a>
+        </div>
     </div>
 
 
    
 
     <!-- About -->
+    <div id="About Us">
     <div class="menu">
         <h3>Stylish Portfolio is perfect theme for your next project! </h3>
         <p>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at Unsplash! </p>
         <a href="#">What We Offer</a>
     </div>
+</div>
     <!-- end about -->
     
     <!-- services -->
+<div id="Services">
     <div class="final">
 
         <h2><span>SERVICES <br></span> What we offer</h2>
@@ -104,19 +100,22 @@
      </div>
 
     </div>
+</div>
     <!-- end section -->
     
 
     <!-- web page -->
+<div id="Map">
     <div class="third">
         <h3 class="frame">Welcome to your </h3>
         <h3 class="serves">next website!</h3>
         <a href="#">Download Now!</a>
     </div>
+</div>
     <!-- end web page -->
 
     <!-- Porfolio -->
-    
+    <div id="Portfolio">
    <div class="book">
     <h2><span>PORTFOLIO <br></span>Recent Projects</h2>
 
@@ -142,14 +141,17 @@
 
     </div>
     </div>
+</div>
      <!-- end Portfolio -->
 
     <!-- button section -->
+    <div id="Contact Us">
     <div class="full">
         <h3>The buttons below are imposible to resist...</h3>
         <a href="#" class="show">Click Me!</a>
         <a href="#" class="diff">Look at Me!</a>
     </div>
+</div>
     <!-- end buttton section -->
 
     <!-- map -->
@@ -159,6 +161,7 @@
     <!-- end of map -->
 
     <!-- footer -->
+
     <div class="live">
         <footer class="cool">
             <i class="fa-brands fa-facebook" style="color: white;"></i>  
