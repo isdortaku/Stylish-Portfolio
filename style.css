@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: "MyCustomfont";
-  src: url("/SourceSans3-Bold.ttf");
+  src: url("SourceSans3-Bold.ttf");
 }
 @font-face {
   font-family: SourceSans3-Regular;
-  src: url("/SourceSans3-Regular.ttf");
+  src: url("SourceSans3-Regular.ttf");
 }
 .nav-links {
   display: flex;
