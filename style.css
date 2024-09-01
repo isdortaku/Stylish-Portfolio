@@ -57,19 +57,19 @@
 .hamburger.active .line:nth-child(1) {
   top: 50%;
   transform: rotate(45deg) translate(20%, -50%);
-  transition: 0.9s ease-in-out;
+  transition: 0.9s ease;
 }
 
 .hamburger.active .line:nth-child(2) {
   top: -50%;
   transform: rotate(-45deg) translate(25%, 50%);
-  transition: 0.9s ease-in-out;
+  transition: 0.9s ease;
   bottom: -10px;
 }
 
 .hamburger.active .line:nth-child(3) {
   opacity: 0;
-  transition: 0.6s ease-in-out;
+  transition: 0.6s;
 }
 
 .nav-links {
@@ -79,7 +79,7 @@
   width: 100%;
   flex-direction: column;
   clip-path: circle(1000px at 90% 10%);
-  -webkit-clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -37%);
   transition: all 2s ease-out;
 }
 
@@ -361,7 +361,7 @@
   font-size: 12px;
 }
 .book .documents {
-  max-width: 80%;
+  margin: auto 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,8 +370,8 @@
 }
 .book .documents h6 {
   font-family: "MyCustomfont";
-  font-size: 13px;
-  margin-right: 40px;
+  font-size: 10px;
+  width: 80%;
   margin-bottom: 40px;
   font-size: 17px;
 }
@@ -386,44 +386,48 @@
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  width: 50%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: end;
+  padding-left: 15px;
 }
 .book .documents .doc2 {
   background-image: url(isdor/portfolio-2.jpg);
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  width: 50%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: end;
+  padding-left: 15px;
 }
 .book .documents .doc3 {
   background-image: url(isdor/Portfolio-3.jpg);
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  width: 50%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: end;
+  padding-left: 15px;
 }
 .book .documents .doc4 {
   background-image: url(isdor/portfolio-4.jpg);
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 500px;
+  width: 50%;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: end;
+  padding-left: 15px;
 }
 
 @media (max-width: 575.98px) {
@@ -516,7 +520,7 @@
   .final .press h3 {
     font-weight: bold;
     padding-top: 7px;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     font-family: "MyCustomfont";
   }
@@ -527,7 +531,7 @@
     font-size: 16px;
   }
   .final .press p {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
   }
   .final .press span {
@@ -636,8 +640,30 @@
     height: 30vh;
     margin-bottom: 10px;
   }
+  .nav-links {
+    height: 36vh;
+  }
+  .nav-links li a {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-links {
+    clip-path: circle(1000px at 90% 10%);
+    -webkit-clip-path: circle(100px at 90% -54%);
+  }
+  .book .documents h6 P {
+    font-size: 9px;
+  }
+  .book .documents .doc1, .book .documents .doc2 {
+    height: 20vh;
+    margin-bottom: 0px;
+  }
+  .book .documents .doc3, .book .documents .doc4 {
+    height: 20vh;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .final h3 {
     font-size: 15px;
   }
@@ -763,20 +789,20 @@
     padding-top: 4px;
   }
   .book .documents .doc1 {
-    width: 300px;
-    height: 25vh;
+    width: 200px;
+    height: 20vh;
   }
   .book .documents .doc2 {
-    width: 300px;
-    height: 25vh;
+    width: 200px;
+    height: 20vh;
   }
   .book .documents .doc3 {
-    width: 300px;
-    height: 25vh;
+    width: 200px;
+    height: 20vh;
   }
   .book .documents .doc4 {
-    width: 300px;
-    height: 25vh;
+    width: 200px;
+    height: 20vh;
   }
   .full {
     padding: 80px;
@@ -803,123 +829,5 @@
     border-radius: 3px;
     background-color: #212529;
     font-weight: bold;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .final .press p {
-    color: white;
-    font-weight: light;
-    font-size: 12px;
-    margin-left: 4px;
-    padding-top: 7px;
-  }
-  .final .press p h3 {
-    font-size: 16px;
-  }
-  .final .press p s img {
-    width: 71px;
-  }
-  .sho .gevha {
-    position: absolute;
-    top: 40px;
-    right: 0px;
-    margin-right: 30px;
-  }
-  .sho .overlay {
-    background-color: aliceblue;
-  }
-  .sho .overlay a {
-    padding-bottom: 100px;
-    font-size: 50px;
-    color: rgb(22, 106, 175);
-    font-weight: bold;
-  }
-  .sho .overlay a:hover, .sho .overlay a:focus {
-    color: red;
-  }
-  .sho .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  .main {
-    height: 47vh;
-  }
-  .main h1 {
-    font-size: 68px;
-  }
-  .main p {
-    font-size: 19px;
-    margin-bottom: 27px;
-  }
-  .main a {
-    padding: 15px 29px;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  .menu {
-    padding: 75px;
-  }
-  .menu h3 {
-    font-size: 27px;
-  }
-  .menu p {
-    font-size: 15px;
-    margin-bottom: 23px;
-  }
-  .menu a {
-    padding: 15px 28px;
-    font-size: 12px;
-  }
-  .third {
-    width: 100%;
-    height: 37vh;
-  }
-  .third h3 {
-    font-size: 38px;
-  }
-  .third .serves {
-    margin-bottom: 30px;
-  }
-  .third a {
-    padding: 15px 28px;
-    font-size: 12px;
-  }
-  .book {
-    padding: 70px 0;
-  }
-  .book h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-  }
-  .book .documents {
-    margin-left: 10px;
-  }
-  .book .documents h6 P {
-    font-family: "SourceSans3-Regular";
-    font-size: 11px;
-    margin-bottom: 17px;
-    padding-top: 5px;
-    margin-left: 10px;
-  }
-  .book .documents .doc1 {
-    height: 21vh;
-    width: 354px;
-  }
-  .book .documents .doc2 {
-    height: 21vh;
-    width: 354px;
-  }
-  .book .documents .doc3 {
-    height: 21vh;
-    width: 354px;
-  }
-  .book .documents .doc4 {
-    height: 21vh;
-    width: 354px;
-  }
-  .map {
-    height: 25vh;
   }
 }/*# sourceMappingURL=style.css.map */
